@@ -73,16 +73,21 @@ $(window).scroll(function() {
                 $('.skill .figure').eq(i).addClass('muncul');
             }, 300 * i);
         });
-    }
-
-    // tools
-    if (wScroll > $('.tools').offset().top - 250) {
         $('.tools .figure').each(function(i) {
             setTimeout(function() {
                 $('.tools .figure').eq(i).addClass('muncul');
             }, 300 * i);
         });
     }
+
+    // tools
+    // if (wScroll > $('.tools').offset().top - 250) {
+    //     $('.tools .figure').each(function(i) {
+    //         setTimeout(function() {
+    //             $('.tools .figure').eq(i).addClass('muncul');
+    //         }, 300 * i);
+    //     });
+    // }
 
     // licenses
     if (wScroll > $('.licenses').offset().top - 250) {
