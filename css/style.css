@@ -56,7 +56,8 @@ hr {
     transform: translate(0, 0);
 }
 
-.figure h6 {
+.figure h6,
+.figure h7 {
     color: #171717;
 }
 
@@ -81,9 +82,8 @@ hr {
 
 .figure-caption .viewers {
     font-size: 11px;
-    margin-top: -9px;
+    margin-top: -10px;
     margin-bottom: 5px;
-    margin-left: -250px;
     color: #171717;
 }
 
