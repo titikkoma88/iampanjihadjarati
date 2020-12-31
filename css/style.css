@@ -87,6 +87,12 @@ hr {
     color: #171717;
 }
 
+.figure-caption .deskription-porto{
+    margin-top: -15px;
+    color: #171717;
+}
+
+
 .store a {
     text-decoration: none;
 }
