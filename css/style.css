@@ -80,12 +80,6 @@ hr {
     opacity: 1;
 }
 
-.figure-caption .viewers {
-    font-size: 11px;
-    margin-top: -10px;
-    margin-bottom: 5px;
-    color: #171717;
-}
 
 .figure-caption .deskription-porto{
     margin-top: -15px;
@@ -97,9 +91,6 @@ hr {
     text-decoration: none;
 }
 
-.contact {
-    /* min-height: 750px; */
-}
 
 footer {
     bottom: 0;
