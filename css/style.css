@@ -3,6 +3,8 @@
     background-image: url('../img/jumbotronporto.jpg');
     background-attachment: fixed;
     background-size: cover;
+    /* background: no-repeat; */
+    background-repeat: no-repeat;
     background-position: 0 -130px;
     color: #eaeaea;
     overflow: hidden;
