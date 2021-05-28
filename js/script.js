@@ -57,7 +57,7 @@ $(window).scroll(function() {
         'transform': 'translate(0px, ' + wScroll / 1.2 + '%)'
     });
 
-    // portfolio
+    portfolio
     if (wScroll > $('.portfolio').offset().top - 250) {
         $('.portfolio .figure').each(function(i) {
             setTimeout(function() {
