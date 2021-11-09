@@ -1,0 +1,17 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/u1097713/public_html/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp certifications-1.html $DEPLOYPATH
+    - /bin/cp certifications-2.html $DEPLOYPATH
+    - /bin/cp certifications-3.html $DEPLOYPATH
+    - /bin/cp certifications-4.html $DEPLOYPATH
+    - /bin/cp certifications-5.css $DEPLOYPATH
+    - /bin/cp certifications-6.html $DEPLOYPATH
+    - /bin/cp project.html $DEPLOYPATH
+    - /bin/cp -R css $DEPLOYPATH
+    - /bin/cp -R fontawesome-free-5.14.0-web $DEPLOYPATH
+    - /bin/cp -R js $DEPLOYPATH
+    - /bin/cp -R img $DEPLOYPATH
+    - /bin/cp -R webfonts $DEPLOYPATH
