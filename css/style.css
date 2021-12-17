@@ -1,5 +1,5 @@
 .jumbotron {
-    height: 490px;
+    height: 630px;
     background-image: url('../img/jumbotronporto.jpg');
     background-attachment: fixed;
     background-size: cover;
@@ -164,7 +164,7 @@ hr {
   font-weight: bold;
   font-style: italic;
   top: 280px;
-  left: 450px;
+  left: 100px;
   opacity: 0;
   transition: 0.5s;
 }
