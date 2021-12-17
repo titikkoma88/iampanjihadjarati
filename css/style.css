@@ -125,6 +125,112 @@ hr {
     color: #171717;
 }
 
+.my-portfolio {
+  background-color: #eee;
+}
+
+.myporto-box {
+  position: relative;
+  background-color: #eee;
+  border-radius: 10px;
+  height: 400px;
+  transform-style: preserve-3d;
+}
+
+.myporto-box::before {
+  content: "MY";
+  position: absolute;
+  color: #fff;
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: italic;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.myporto-box:hover::before {
+  
+  opacity: 1;
+}
+
+.myporto-box::after {
+  content: "PORTOFOLIO";
+  position: absolute;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  font-style: italic;
+  top: 280px;
+  left: 450px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.myporto-box:hover::after {
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+
+.myporto-name {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: rgb(3, 3, 3);
+  text-align: center;
+  font-size: 2rem;
+  opacity: 0;
+  transform: translate3d(0, 0, 50px);
+  transition: 0.5s;
+}
+
+.myporto-box:hover .myporto-name {
+  top: 15px;
+  opacity: 1;
+}
+
+.myporto-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 100px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.myporto-box:hover .myporto-button {
+  opacity: 1;
+  bottom: 15px;
+}
+
+.myporto-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 100px);
+  max-width: 300px;
+  transition: 0.5s;
+}
+
+.myporto-box:hover .myporto-img {
+  transform: translate3d(-50%, -50%, 100px) rotate(5deg) scale(1.2);
+}
+
+.deskription-porto{
+  font-size: 90%;
+  color: #6c757d;
+}
+
+.deskription2-porto{
+  margin-top: -15px;
+  font-size: 90%;
+  color: #171717;
+
+}
+
 footer {
     bottom: 0;
     width: 100%;
