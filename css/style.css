@@ -137,8 +137,96 @@ hr {
   transform-style: preserve-3d;
 }
 
+.myporto-box-laravel {
+  position: relative;
+  background-color: #eee;
+  border-radius: 10px;
+  height: 400px;
+  transform-style: preserve-3d;
+}
+
+.myporto-box-codeigniter {
+  position: relative;
+  background-color: #eee;
+  border-radius: 10px;
+  height: 400px;
+  transform-style: preserve-3d;
+}
+
+.myporto-box-react {
+  position: relative;
+  background-color: #eee;
+  border-radius: 10px;
+  height: 400px;
+  transform-style: preserve-3d;
+}
+
+.myporto-box-cms {
+  position: relative;
+  background-color: #eee;
+  border-radius: 10px;
+  height: 400px;
+  transform-style: preserve-3d;
+}
+
 .myporto-box::before {
   content: "MY";
+  position: absolute;
+  color: #fff;
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: italic;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.myporto-box-laravel::before {
+  content: "Framework";
+  position: absolute;
+  color: #fff;
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: italic;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.myporto-box-codeigniter::before {
+  content: "Framework";
+  position: absolute;
+  color: #fff;
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: italic;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.myporto-box-react::before {
+  content: "Framework";
+  position: absolute;
+  color: #fff;
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: italic;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.myporto-box-cms::before {
+  content: "Framework";
   position: absolute;
   color: #fff;
   font-size: 4rem;
@@ -156,6 +244,26 @@ hr {
   opacity: 1;
 }
 
+.myporto-box-laravel:hover::before {
+  
+  opacity: 1;
+}
+
+.myporto-box-codeigniter:hover::before {
+  
+  opacity: 1;
+}
+
+.myporto-box-react:hover::before {
+  
+  opacity: 1;
+}
+
+.myporto-box-cms:hover::before {
+  
+  opacity: 1;
+}
+
 .myporto-box::after {
   content: "PORTOFOLIO";
   position: absolute;
@@ -169,7 +277,83 @@ hr {
   transition: 0.5s;
 }
 
+.myporto-box-laravel::after {
+  content: "LARAVEL";
+  position: absolute;
+  color: rgb(235, 0, 0);
+  font-size: 3rem;
+  font-weight: bold;
+  font-style: italic;
+  top: 280px;
+  left: 100px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.myporto-box-codeigniter::after {
+  content: "CodeIgniter";
+  position: absolute;
+  color: rgb(221, 72, 20);
+  font-size: 3rem;
+  font-weight: bold;
+  font-style: italic;
+  top: 280px;
+  left: 100px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.myporto-box-react::after {
+  content: "React JS";
+  position: absolute;
+  color: rgb(0,255,255);
+  font-size: 3rem;
+  font-weight: bold;
+  font-style: italic;
+  top: 280px;
+  left: 100px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.myporto-box-cms::after {
+  content: "CMS";
+  position: absolute;
+  color: rgb(126, 127, 128);
+  font-size: 3rem;
+  font-weight: bold;
+  font-style: italic;
+  top: 280px;
+  left: 100px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
 .myporto-box:hover::after {
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+
+.myporto-box-laravel:hover::after {
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+
+.myporto-box-codeigniter:hover::after {
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+
+.myporto-box-react:hover::after {
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+
+.myporto-box-cms:hover::after {
   left: 50%;
   transform: translate(-50%, 0);
   opacity: 1;
@@ -192,6 +376,26 @@ hr {
   opacity: 1;
 }
 
+.myporto-box-laravel:hover .myporto-name {
+  top: 15px;
+  opacity: 1;
+}
+
+.myporto-box-codeigniter:hover .myporto-name {
+  top: 15px;
+  opacity: 1;
+}
+
+.myporto-box-react:hover .myporto-name {
+  top: 15px;
+  opacity: 1;
+}
+
+.myporto-box-cms:hover .myporto-name {
+  top: 15px;
+  opacity: 1;
+}
+
 .myporto-button {
   position: absolute;
   bottom: 0;
@@ -206,6 +410,26 @@ hr {
   bottom: 15px;
 }
 
+.myporto-box-laravel:hover .myporto-button {
+  opacity: 1;
+  bottom: 15px;
+}
+
+.myporto-box-codeigniter:hover .myporto-button {
+  opacity: 1;
+  bottom: 15px;
+}
+
+.myporto-box-react:hover .myporto-button {
+  opacity: 1;
+  bottom: 15px;
+}
+
+.myporto-box-cms:hover .myporto-button {
+  opacity: 1;
+  bottom: 15px;
+}
+
 .myporto-img {
   position: absolute;
   top: 50%;
@@ -216,6 +440,22 @@ hr {
 }
 
 .myporto-box:hover .myporto-img {
+  transform: translate3d(-50%, -50%, 100px) rotate(5deg) scale(1.2);
+}
+
+.myporto-box-laravel:hover .myporto-img {
+  transform: translate3d(-50%, -50%, 100px) rotate(5deg) scale(1.2);
+}
+
+.myporto-box-codeigniter:hover .myporto-img {
+  transform: translate3d(-50%, -50%, 100px) rotate(5deg) scale(1.2);
+}
+
+.myporto-box-react:hover .myporto-img {
+  transform: translate3d(-50%, -50%, 100px) rotate(5deg) scale(1.2);
+}
+
+.myporto-box-cms:hover .myporto-img {
   transform: translate3d(-50%, -50%, 100px) rotate(5deg) scale(1.2);
 }
 
