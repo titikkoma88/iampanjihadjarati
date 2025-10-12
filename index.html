@@ -89,7 +89,8 @@
         <p class="lead"></p>
         <a
           href="https://drive.google.com/file/d/1lsncqi-dcsvbW2EmP8VjwzBEBvBNufhk/view?usp=sharing"
-          class="btn btn-warning text-white mt-3"
+          class="btn btn-warning text-white mt-3" 
+          target="_blank"
         >
           Resume
         </a>
@@ -119,7 +120,7 @@
             <p class="pKanan">
               Experienced Web developer with a demonstrated history of working
               in the commercial real estate industry, Skilled in Programming,
-              Web Development, Consulting, Marketing, Team Leadership, Coaching and Mentoring.
+              Backend Development, Consulting, Marketing, Team Leadership, Coaching and Mentoring.
             </p>
           </div>
         </div>
@@ -1194,91 +1195,6 @@
             <hr />
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-sm-8">
-            <div
-              class="
-                alert alert-success alert-dismissible
-                fade
-                show
-                d-none
-                my-alert
-              "
-              role="alert"
-            >
-              <strong>Thank you!</strong> We have received your message.
-              <button
-                type="button"
-                class="close"
-                data-dismiss="alert"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <form name="panjihadjarati-contact-form">
-              <div class="form-group">
-                <label for="name">Full Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  class="form-control"
-                  placeholder="Input Name"
-                />
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  class="form-control"
-                  placeholder="Input Email"
-                />
-              </div>
-
-              <!-- <div class="form-group">
-                            <label for="telp">Phone</label>
-                            <input type="tel" id="telp" class="form-control" placeholder="Input Phone Number">
-                        </div>
-                        <div class="form-group">
-                            <label for="telp">Category</label>
-                            <select class="form-control">
-                                <option>-- Choose Category --</option>
-                                <option>Web Design</option>
-                                <option>Web Development</option>
-                            </select>
-                        </div> -->
-
-              <div class="form-group">
-                <label for="message"> Message</label>
-                <textarea
-                  class="form-control"
-                  rows="5"
-                  id="message"
-                  name="message"
-                  placeholder="Input message"
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary btn-send">
-                Send
-              </button>
-              <button
-                class="btn btn-primary btn-loading d-none"
-                type="button"
-                disabled
-              >
-                <span
-                  class="spinner-border spinner-border-sm"
-                  role="status"
-                  aria-hidden="true"
-                ></span>
-                Loading...
-              </button>
-              <!-- <button onclick="success();" class="btn btn-warning">Submit</button> -->
-            </form>
-          </div>
         </div>
         <!-- <div class="row p-3">
                 <div class="col-sm-12 text-center">
@@ -1288,15 +1204,14 @@
             </div> -->
         <div class="row justify-content-center p-5">
           <div class="col-md-1 mr-5">
-            <a href="mailto:mail@panjihadjarati.com" target="_BLANK">
+            <a href="mailto:jie.piranha@gmail.com" target="_BLANK">
               <img src="img/ic_mailblue.png" />
             </a>
           </div>
           <div class="col-md-3">
             <a
               href="https://www.linkedin.com/in/panji-ramadhan-hadjarati-48094a179/"
-              target="_BLANK"
-            >
+              target="_BLANK">
               <img src="img/ic_linkedin.png" />
             </a>
           </div>
@@ -1429,7 +1344,7 @@
       gsap.to(".lead", {
         duration: 2,
         delay: 1.5,
-        text: "Web Developer | Mobile Apps Developer",
+        text: "Web Developer | Backend Developer | Enterprise Architect",
       });
       gsap.from(".jumbotron img", { duration: 1, rotateY: 360, opacity: 0 });
       gsap.from(".navbar", {
@@ -1444,33 +1359,6 @@
         opacity: 0,
         delay: 0.5,
         ease: "back",
-      });
-    </script>
-    <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbzEKX6EMqf3pTMjbYa3r7FN7EPabJiqb6LlXJACy-YHBVvaJRFFjFN9mHCVPul448PG/exec";
-      const form = document.forms["panjihadjarati-contact-form"];
-      const btnSend = document.querySelector(".btn-send");
-      const btnLoading = document.querySelector(".btn-loading");
-      const myAlert = document.querySelector(".my-alert");
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        // ketika tombol submit diklik
-        // tampilkan tombol loading, hilangkan tombol kirim
-        btnLoading.classList.toggle("d-none");
-        btnSend.classList.toggle("d-none");
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            // tampilkan tombol loading, hilangkan tombol kirim
-            btnLoading.classList.toggle("d-none");
-            btnSend.classList.toggle("d-none");
-            // tampilkan alert
-            myAlert.classList.toggle("d-none");
-            form.reset();
-            console.log("Success!", response);
-          })
-          .catch((error) => console.error("Error!", error.message));
       });
     </script>
     <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
