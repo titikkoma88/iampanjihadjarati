@@ -153,7 +153,23 @@ hr {
   transform-style: preserve-3d;
 }
 
-.myporto-box-react {
+.myporto-box-express {
+  position: relative;
+  background-color: #eee;
+  border-radius: 10px;
+  height: 400px;
+  transform-style: preserve-3d;
+}
+
+.myporto-box-go {
+  position: relative;
+  background-color: #eee;
+  border-radius: 10px;
+  height: 400px;
+  transform-style: preserve-3d;
+}
+
+.myporto-box-wordpress {
   position: relative;
   background-color: #eee;
   border-radius: 10px;
@@ -211,7 +227,35 @@ hr {
   transition: 0.5s;
 }
 
-.myporto-box-react::before {
+.myporto-box-express::before {
+  content: "Framework";
+  position: absolute;
+  color: #fff;
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: italic;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.myporto-box-go::before {
+  content: "Framework";
+  position: absolute;
+  color: #fff;
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: italic;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.myporto-box-wordpress::before {
   content: "Framework";
   position: absolute;
   color: #fff;
@@ -254,7 +298,17 @@ hr {
   opacity: 1;
 }
 
-.myporto-box-react:hover::before {
+.myporto-box-express:hover::before {
+  
+  opacity: 1;
+}
+
+.myporto-box-go:hover::before {
+  
+  opacity: 1;
+}
+
+.myporto-box-wordpress:hover::before {
   
   opacity: 1;
 }
@@ -303,10 +357,36 @@ hr {
   transition: 0.5s;
 }
 
-.myporto-box-react::after {
-  content: "React JS";
+.myporto-box-express::after {
+  content: "Express JS";
   position: absolute;
-  color: rgb(0,255,255);
+  color: rgb(131, 131, 131);
+  font-size: 3rem;
+  font-weight: bold;
+  font-style: italic;
+  top: 280px;
+  left: 100px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.myporto-box-go::after {
+  content: "Express JS";
+  position: absolute;
+  color: rgb(0, 225, 255);
+  font-size: 3rem;
+  font-weight: bold;
+  font-style: italic;
+  top: 280px;
+  left: 100px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.myporto-box-wordpress::after {
+  content: "Wordpress";
+  position: absolute;
+  color: rgb(4, 0, 255);
   font-size: 3rem;
   font-weight: bold;
   font-style: italic;
@@ -319,7 +399,7 @@ hr {
 .myporto-box-cms::after {
   content: "CMS";
   position: absolute;
-  color: rgb(126, 127, 128);
+  color: rgb(87, 236, 0);
   font-size: 3rem;
   font-weight: bold;
   font-style: italic;
@@ -347,7 +427,19 @@ hr {
   opacity: 1;
 }
 
-.myporto-box-react:hover::after {
+.myporto-box-express:hover::after {
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+
+.myporto-box-go:hover::after {
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+
+.myporto-box-wordpress:hover::after {
   left: 50%;
   transform: translate(-50%, 0);
   opacity: 1;
@@ -386,7 +478,17 @@ hr {
   opacity: 1;
 }
 
-.myporto-box-react:hover .myporto-name {
+.myporto-box-express:hover .myporto-name {
+  top: 15px;
+  opacity: 1;
+}
+
+.myporto-box-go:hover .myporto-name {
+  top: 15px;
+  opacity: 1;
+}
+
+.myporto-box-wordpress:hover .myporto-name {
   top: 15px;
   opacity: 1;
 }
@@ -420,7 +522,17 @@ hr {
   bottom: 15px;
 }
 
-.myporto-box-react:hover .myporto-button {
+.myporto-box-express:hover .myporto-button {
+  opacity: 1;
+  bottom: 15px;
+}
+
+.myporto-box-go:hover .myporto-button {
+  opacity: 1;
+  bottom: 15px;
+}
+
+.myporto-box-wordpress:hover .myporto-button {
   opacity: 1;
   bottom: 15px;
 }
@@ -451,7 +563,15 @@ hr {
   transform: translate3d(-50%, -50%, 100px) rotate(5deg) scale(1.2);
 }
 
-.myporto-box-react:hover .myporto-img {
+.myporto-box-express:hover .myporto-img {
+  transform: translate3d(-50%, -50%, 100px) rotate(5deg) scale(1.2);
+}
+
+.myporto-box-go:hover .myporto-img {
+  transform: translate3d(-50%, -50%, 100px) rotate(5deg) scale(1.2);
+}
+
+.myporto-box-wordpress:hover .myporto-img {
   transform: translate3d(-50%, -50%, 100px) rotate(5deg) scale(1.2);
 }
 
