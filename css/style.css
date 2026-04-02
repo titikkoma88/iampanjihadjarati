@@ -161,6 +161,14 @@ hr {
   transform-style: preserve-3d;
 }
 
+.myporto-box-nest {
+  position: relative;
+  background-color: #eee;
+  border-radius: 10px;
+  height: 400px;
+  transform-style: preserve-3d;
+}
+
 .myporto-box-go {
   position: relative;
   background-color: #eee;
@@ -241,6 +249,20 @@ hr {
   transition: 0.5s;
 }
 
+.myporto-box-nest::before {
+  content: "Framework";
+  position: absolute;
+  color: #fff;
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: italic;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
 .myporto-box-go::before {
   content: "Framework";
   position: absolute;
@@ -299,6 +321,11 @@ hr {
 }
 
 .myporto-box-express:hover::before {
+  
+  opacity: 1;
+}
+
+.myporto-box-nest:hover::before {
   
   opacity: 1;
 }
@@ -370,8 +397,21 @@ hr {
   transition: 0.5s;
 }
 
+.myporto-box-nest::after {
+  content: "NEST JS";
+  position: absolute;
+  color: rgb(250, 96, 96);
+  font-size: 3rem;
+  font-weight: bold;
+  font-style: italic;
+  top: 280px;
+  left: 100px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
 .myporto-box-go::after {
-  content: "Express JS";
+  content: "Golang";
   position: absolute;
   color: rgb(0, 225, 255);
   font-size: 3rem;
@@ -433,6 +473,12 @@ hr {
   opacity: 1;
 }
 
+.myporto-box-nest:hover::after {
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+
 .myporto-box-go:hover::after {
   left: 50%;
   transform: translate(-50%, 0);
@@ -483,6 +529,11 @@ hr {
   opacity: 1;
 }
 
+.myporto-box-nest:hover .myporto-name {
+  top: 15px;
+  opacity: 1;
+}
+
 .myporto-box-go:hover .myporto-name {
   top: 15px;
   opacity: 1;
@@ -527,6 +578,11 @@ hr {
   bottom: 15px;
 }
 
+.myporto-box-nest:hover .myporto-button {
+  opacity: 1;
+  bottom: 15px;
+}
+
 .myporto-box-go:hover .myporto-button {
   opacity: 1;
   bottom: 15px;
@@ -564,6 +620,10 @@ hr {
 }
 
 .myporto-box-express:hover .myporto-img {
+  transform: translate3d(-50%, -50%, 100px) rotate(5deg) scale(1.2);
+}
+
+.myporto-box-nest:hover .myporto-img {
   transform: translate3d(-50%, -50%, 100px) rotate(5deg) scale(1.2);
 }
 
