@@ -1,6 +1,6 @@
 // event pada saat link di klik
 
-$('.page-scroll').on('click', function() {
+$('.page-scroll').on('click', function(e) {
 
     //ambil isi href
     var tujuan = $(this).attr('href');
@@ -44,7 +44,7 @@ $(window).on('load', function() {
 $(window).scroll(function() {
     var wScroll = $(this).scrollTop();
 
-    //jumbotron
+    // jumbotron
     $('.jumbotron img').css({
         'transform': 'translate(0px, ' + wScroll / 4 + '%)'
     });
@@ -57,8 +57,8 @@ $(window).scroll(function() {
         'transform': 'translate(0px, ' + wScroll / 1.2 + '%)'
     });
 
-    portfolio
-    if (wScroll > $('.portfolio').offset().top - 250) {
+    // portfolio
+    if ($('.portfolio').length && wScroll > $('.portfolio').offset().top - 250) {
         $('.portfolio .figure').each(function(i) {
             setTimeout(function() {
                 $('.portfolio .figure').eq(i).addClass('muncul');
@@ -67,7 +67,7 @@ $(window).scroll(function() {
     }
 
     // skill
-    if (wScroll > $('.skill').offset().top - 250) {
+    if ($('.skill').length && wScroll > $('.skill').offset().top - 250) {
         $('.skill .figure').each(function(i) {
             setTimeout(function() {
                 $('.skill .figure').eq(i).addClass('muncul');
@@ -90,7 +90,7 @@ $(window).scroll(function() {
     // }
 
     // licenses
-    if (wScroll > $('.licenses').offset().top - 250) {
+    if ($('.licenses').length && wScroll > $('.licenses').offset().top - 250) {
         $('.licenses .figure').each(function(i) {
             setTimeout(function() {
                 $('.licenses .figure').eq(i).addClass('muncul');
